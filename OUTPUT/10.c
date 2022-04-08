@@ -20,6 +20,9 @@ int main()
     for(j=0;j<=10;j++);
     printf("yy= %d ",j);
 
+
     return 0;
 }
+
+
 
