@@ -20,7 +20,8 @@ int main()
     for(j=0;j<=10;j++);
     printf("yy= %d ",j);
 
-
+    int k=8;
+    printf("%d",--k++);
     return 0;
 }
 
