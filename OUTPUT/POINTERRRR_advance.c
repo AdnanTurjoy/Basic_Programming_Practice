@@ -17,5 +17,6 @@ int main()
     printf("%x\n",pttt);
     printf("%d\n",**ptt);
     printf("%d\n",***pttt);
+    printf("%d\n",*(&a));
     return 0;
 }
