@@ -15,5 +15,7 @@ int main()
     printf("%x\n",&pt);     /// pt মানে  a এর যে এড্রেস পয়েন্ট করা ছিল ওইটা কিন্তু  &pt মানে pt এর নিজস্ব এড্রেস।
     printf("%x\n",ptt);
     printf("%x\n",pttt);
+    printf("%d\n",**ptt);
+    printf("%d\n",***pttt);
     return 0;
 }
