@@ -2,14 +2,14 @@
 #include<stdio.h>
 int main()
 {
-    int a[10],i,j,k,ck;
+    int a[10],i,j,k,temp;
     for(i=0;i<5;i++) scanf("%d",&a[i]);
     for(i=0;i<5;i++){
-        for(j=i+1;j<5;j++){
-            if(a[i]>a[j]){
-                int temp=a[i];
-                a[i]=a[j];
-                a[j]=temp;
+        for(j=0;j<4;j++){
+            if(a[j]>a[j+1]){
+                temp=a[j];
+                a[j]=a[j+1];
+                a[j+1]=temp;
             }
         }
     }
