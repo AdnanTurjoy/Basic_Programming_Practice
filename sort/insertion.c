@@ -1,25 +1,28 @@
 
-#include<stdio.h>
+/// Insert Sort
+#include<iostream>
+using namespace std;
 int main()
 {
-    int a[10],i,j,k,ck,temp;
-    for(i=0;i<5;i++) scanf("%d",&a[i]);
-    for(i=0;i<5;i++){
+    int i,a[]= {3,6,2,9,1,4,7,5},temp,ck,j,k;
+    int n;
+    n=sizeof(a)/sizeof(a[0]);
+    for(i=1;i<n;i++){
+        temp=a[i];
         j=i-1;
-         temp=a[i];
-        while(j>=0){
-            if(temp<a[j]){
-                a[j+1]=a[j];
-            }
-            else{
-                break;
-            }
-            j--;
-        }
-        a[j+1]=temp;
+       while(j>=0 && a[j]>temp){
+           a[j+1]=a[j];
+           j--;
+       }
+       a[j+1]=temp;
     }
-        for(i=0;i<5;i++) printf("%d ",a[i]);
+    
+
+    for(i=0; i<n; i++) cout<<a[i]<<" ";
 
     return 0;
 }
+
+
+
 
