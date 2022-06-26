@@ -1,25 +1,28 @@
-
-
-#include<stdio.h>
+/// Selection Sort
+#include<iostream>
+using namespace std;
 int main()
 {
-    int a[10],i,j,k,ck,temp;
-    for(i=0;i<5;i++) scanf("%d",&a[i]);
-    for(i=0;i<5;i++){
-             temp=a[i];
-            ck=i;
-        for(j=i;j<5;j++){
+     int i,a[]= {3,6,2,9,1,4,7,5},temp,min,j,k;
+    int n;
+    n=sizeof(a)/sizeof(a[0]);
 
-            if(a[i]>a[j]){
-                temp=a[i];
-                ck=j;
-            }
-        }
-        temp=a[i];
-        a[i]=a[ck];
-        a[ck]=temp;
+    for(i=0;i<n-1;i++){
+        min=i;
+        
+       for(j=i+1;j<n;j++){
+           if(a[j]<a[min]){
+               min=j;
+           }
+       }
+           temp=a[min];
+           a[min]=a[i];
+           a[i]=temp;
     }
-        for(i=0;i<5;i++) printf("%d ",a[i]);
+     
+    
+        for(i=0;i<n;i++) cout<<a[i]<<" ";
+
 
     return 0;
 }
