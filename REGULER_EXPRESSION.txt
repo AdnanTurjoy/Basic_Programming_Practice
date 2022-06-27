@@ -1,3 +1,5 @@
+First digit cann't be Zero : ^[1-9][0-9]{9}   // cann't be Zero for 1st digit and make 9 size of digit like: 290198765
+
 URL CHECK: ([a-zA-z0-9]\.)?[a-zA-z0-9]+\.+[a-zA-z]{2,4}
 
 EMAIL CHECK: [a-z0-9]+@[a-z]+\.[a-z]{2,3}
