@@ -1,0 +1,4 @@
+URL CHECK: ([a-zA-z0-9]\.)?[a-zA-z0-9]+\.+[a-zA-z]{2,4}
+EMAIL CHECK: [a-z0-9]+@[a-z]+\.[a-z]{2,3}
+PHONE NUMBER CHECK: (\+88)?-?01[0-9]{9}
+PASSWORD VALIDATE: [a-zA-Z0-9\W]{8,}
