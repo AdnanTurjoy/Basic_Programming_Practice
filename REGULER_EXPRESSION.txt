@@ -1,4 +1,14 @@
 URL CHECK: ([a-zA-z0-9]\.)?[a-zA-z0-9]+\.+[a-zA-z]{2,4}
+
 EMAIL CHECK: [a-z0-9]+@[a-z]+\.[a-z]{2,3}
+
 PHONE NUMBER CHECK: (\+88)?-?01[0-9]{9}
-PASSWORD VALIDATE: [a-zA-Z0-9\W]{8,}
+
+PASSWORD VALIDATE: (?=.*[A-z])(?=.*[a-z])(?=.*[0-9])(?=.*[\w])[a-zA-Z0-9_\W]{8,}
+                       
+                       //(?=.*[A-z]) = atleast 1 big charecter
+                       // (?=.*[a-z]) = atleast 1 small charecter
+                       // (?=.*[0-9]) = atleast 1 digit
+                       // (?=.*[\w]) = atleast 1 special charecter 
+                       // [a-zA-Z0-9_\W] = all types of letter,digit,special char
+                       // {8,} = minimum 8 char size and max infinte
