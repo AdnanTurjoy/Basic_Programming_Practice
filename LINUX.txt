@@ -1,0 +1,32 @@
+
+mkdir titas{1..5}            : 50 directories from titas1 through titas5
+
+mkdir titas{1..10}0          : 10 directories from titas10 through titas100  >> titas10,titas20,titas30....
+
+mkdir -p sa{1..50}/sax{1..50}  :same but each of the directories will hold 50 times sax1 through sax50 (-p will create parent directories if they do not exist.
+
+mkdir {a-z}12345     : 26 directories from a12345 through z12345
+
+mkdir {1,2,3}        : comma separated list makes dirs 1, 2 and 3.
+
+mkdir test{01..10}   : 10 directories from test01 through test10.
+
+mkdir -p `date '+%y%m%d'`/{1,2,3}   : same as 4 but with the current date as a directory and 1,2,3 in it.
+
+mkdir -p $USER/{1,2,3}     : same as 4 but with the current user as a directory and 1,2,3 in it.
+
+mkdir -p Website/{static/{cs,js},templates/html\ and\ xhtml}   :   -p must be
+
+Websites/
+  static/
+      cs
+      js
+  templates/
+      html and xhtml
+
+
+
+
+
+
+
