@@ -7,7 +7,8 @@ int main()
     k=n;
     for(i=1;i<n-1;i++){
         int rem = n % i;         /// perfect number, a positive integer that is equal to the sum of its proper divisors. 
-        if(rem ==0) {
+                                /// Strong number is a number whose sum of all digits' factorial is equal to the number 'n'
+        if(rem ==0) {           /// An Armstrong number is one whose sum of digits raised to the power three equals the number itself.
             s=s+i;
         }
     }
