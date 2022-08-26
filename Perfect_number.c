@@ -6,7 +6,7 @@ int main()
     scanf("%d",&n);
     k=n;
     for(i=1;i<n-1;i++){
-        int rem = n % i;         /// total factor gula jog korlei hobe
+        int rem = n % i;         /// perfect number, a positive integer that is equal to the sum of its proper divisors. 
         if(rem ==0) {
             s=s+i;
         }
